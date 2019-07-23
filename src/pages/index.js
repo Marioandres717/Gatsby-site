@@ -115,7 +115,7 @@ const IndexPage = () => (
     <SectionCellGroup>
       {staticdata.cells.map(cell => (
         <>
-          <Cell title={cell.title} image={cell.image} />
+          <Cell title={cell.title} image={cell.image} key={cell.id} />
         </>
       ))}
     </SectionCellGroup>
